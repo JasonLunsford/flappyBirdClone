@@ -177,8 +177,8 @@ class PlayScene extends BaseScene {
         const pipeBaseSpread = this.getLastPipe();
 
         let pipeGap = Phaser.Math.Between(...difficulty.pipeGapSpread);
-        let pipePosition = Phaser.Math.Between(20, this.config.height - 20 - pipeGap);
-        let pipeSpread = Phaser.Math.Between(450, 500);
+        let pipePosition = Phaser.Math.Between(20, this.config.height - pipeGap);
+        let pipeSpread = Phaser.Math.Between(425, 475);
 
         upperPipe.x = pipeBaseSpread + pipeSpread;
         upperPipe.y = pipePosition;

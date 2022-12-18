@@ -7,8 +7,8 @@ import PreloadScene from './scenes/PreloadScene';
 import ScoreScene from './scenes/ScoreScene';
 
 const SHARED_CONFIG = {
-  width: 800,
-  height: 600,
+  width: window.innerWidth,
+  height: window.innerHeight,
   birdPosition: {
     x: 80,
     y: 300
