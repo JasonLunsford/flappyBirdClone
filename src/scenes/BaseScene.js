@@ -19,7 +19,11 @@ class BaseScene extends Phaser.Scene {
     }
 
     create() {
-        this.add.image(0, 0, 'sky').setOrigin(0, 0);
+        const graphics = this.add.graphics();
+
+        graphics.fillGradientStyle(0x169ac5, 0x169ac5, 0x9addf3, 0x9addf3, 1);
+        graphics.fillRect(0, 0, this.config.width, this.config.height);
+
     }
 
     createMenu(menu, setupMenuEvents) {
